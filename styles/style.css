@@ -53,10 +53,14 @@ ol {
 
 .result__video-container {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
+  padding-bottom: 54.29%;
+  overflow: hidden;
 }
 
 .result__video {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   object-fit: contain;
   object-position: bottom;
