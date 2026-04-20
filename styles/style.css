@@ -242,7 +242,9 @@ ol {
   outline: 1px solid #fff;
 }
 
-.content__card-link_current {
+.content__card-link_current,
+.content__card-link:active {
+  text-decoration: none;
   background-color: #545050;
 }
 
