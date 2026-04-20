@@ -52,8 +52,9 @@ ol {
 }
 
 .result__video-container {
-  margin-bottom: 18px;
+  position: relative;
   height: 54.29%;
+  margin-bottom: 18px;
   overflow: hidden;
   line-height: 0;
 }
