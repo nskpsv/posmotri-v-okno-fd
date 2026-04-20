@@ -78,6 +78,7 @@ ol {
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
 }
@@ -95,9 +96,13 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__label:hover {
+.search-form__label:has(input[type="checkbox"]):hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.search-form__label:has(input[type="checkbox"]):active {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -111,12 +116,14 @@ ol {
 }
 
 .search-form__textfield {
+  min-width: 225px;
   border: 1px solid #fff;
   border-right: none;
   border-left: none;
   padding: 2.5px 0;
   outline: none;
   color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   line-height: 100%;
   background-color: transparent;
@@ -165,10 +172,6 @@ ol {
   cursor: pointer;
 }
 
-.button:active {
-  background-color: #545050;
-}
-
 .button:hover {
   text-decoration: underline;
 }
@@ -176,6 +179,11 @@ ol {
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.button:active {
+  text-decoration: none;
+  background-color: #545050;
 }
 
 .search-form__submit-button {
